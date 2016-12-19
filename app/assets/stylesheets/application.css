@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+ul {
+	list-style-type: none;
+}
+.navitems{
+	display: inline-flex;
+	margin-top: -50px;
+}
+.jumbotron{
+	height:300px;
+}
+input#search.form-control{
+  padding-right: 30px;
+  width: 300px;
+}
