@@ -21,7 +21,8 @@ ul {
 	margin-top: -50px;
 }
 .jumbotron{
-	height:300px;
+	height:450px;
+	background-color: #a9e268;
 }
 input#search.form-control{
   padding-right: 30px;
