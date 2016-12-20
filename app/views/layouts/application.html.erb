@@ -10,32 +10,33 @@
   </head>
 
   <body>
-  	<div class="jumbotron">
+  	
   	<div class="container-fluid">
-  		
-  		<div class="navbar-header">
-  			<nav>
-  				<ul class="navitems">
-  					<li>
-  						<a class="navbar-brand" href="/">BARCHEF</a>
-  					</li>
-  					<li>
-          				<%= form_tag '/search/:id', :method => 'get', :class => "navbar-form navbar-right" do  %>
-            			<div class="form-group input-group">
-              			<%= text_field_tag :search, params[:search], class:"form-control", placeholder:"Search...Users or Recipes" %>
-              			<span class="input-group-btn">
-                			<button class="btn btn-default">
-                  			<span class="glyphicon glyphicon-search"></span>
-                			</button>
-              			</span>        
-            			</div>
-        				<% end %>
-      				</li>
-  				</ul>
-  			</nav>
+  		<div class="row">
+  			<div class="navbar-header">
+  				<nav>
+  					<ul class="navitems">
+  						<li>
+  							<a class="navbar-brand" href="/">BARCHEF</a>
+  						</li>
+  						<li>
+          					<%= form_tag '/search/:id', :method => 'get', :class => "navbar-form navbar-right" do  %>
+            				<div class="form-group input-group">
+              				<%= text_field_tag :search, params[:search], class:"form-control", placeholder:"Search...Users or Recipes" %>
+              				<span class="input-group-btn">
+                				<button class="btn btn-default">
+                  				<span class="glyphicon glyphicon-search"></span>
+                				</button>
+              				</span>        
+            				</div>
+        					<% end %>
+      		  			</li>
+  					</ul>
+  				</nav>
+  			</div>
   		</div>
   	</div>
-  	</div>
+
 
     <%= yield %>
   </body>

@@ -14,15 +14,17 @@
  *= require_self
  */
 ul {
-	list-style-type: none;
+	
 }
 .navitems{
 	display: inline-flex;
 	margin-top: -50px;
 }
-.jumbotron{
-	height:450px;
-	background-color: #a9e268;
+body{
+	height: 752px;
+	background-image: url("/assets/newchef1.jpg");
+	background-repeat: no-repeat;
+ 	background-size: contain;
 }
 input#search.form-control{
   padding-right: 30px;
